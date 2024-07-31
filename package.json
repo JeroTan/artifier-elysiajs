@@ -1,0 +1,14 @@
+{
+  "name": "artifierfaster",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build src/index.ts",
+    "start": "NODE_ENV=production bun src/index.ts",
+    "test": "bun test"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
