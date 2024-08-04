@@ -1,8 +1,12 @@
 import { Elysia } from "elysia";
-import { Env } from "bun";
-import { Context } from "elysia"
+// import { Env } from "bun";
+// import { Context } from "elysia"
 
-const app = new Elysia().get("/", () => "Hello Elysia").listen(3000);
+export const app = new Elysia().get("/", () => "Hello Elysia").mount("/", (req)=>{
+  console.log(req)
+  return Response.json({message:"ehe"});
+}).listen(3000);
+
 
 
 
