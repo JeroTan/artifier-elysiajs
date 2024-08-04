@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "bun --watch src/index.ts",
-    "build": "bun build src/index.ts",
+    "build": "bun build src/index.ts --outdir build",
     "start": "NODE_ENV=production bun src/index.ts",
     "test": "bun test"
   },
